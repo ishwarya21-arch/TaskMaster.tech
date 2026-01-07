@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daily To-Do</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <div class="card" id="login">
+      <h3>Login</h3>
+      <input id="user" placeholder="Username">
+      <input id="pass" type="password" placeholder="Password">
+      <button onclick="doLogin()">Login</button>
+    </div>
+
+    
+    <div class="card" id="routine" style="display:none">
+      <h3>Daily Routine</h3>
+      <input id="wake" placeholder="Wake up time">
+      <input id="study" placeholder="Study time">
+      <input id="sleep" placeholder="Sleep time">
+      <button onclick="create()">Create To-Do</button>
+    </div>
+
+   
+    <div class="card" id="todo" style="display:none">
+      <h3>My To-Do</h3>
+      <button onclick="toggle()">Dark Mode</button>
+      <input id="task" placeholder="Add task & press Enter">
+      <ul id="list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
